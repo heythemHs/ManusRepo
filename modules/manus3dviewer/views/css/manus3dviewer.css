@@ -1,0 +1,48 @@
+/* Create the directory if it doesn't exist */
+/* mkdir -p manus3dviewer/views/css */
+
+.manus3dviewer_container {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.manus3dviewer_model_wrapper {
+    width: 100%;
+    max-width: 800px; /* Max width for the viewer */
+    height: 400px; /* Fixed height for the viewer */
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.manus3dviewer_model {
+    width: 100%;
+    height: 100%;
+    /* Ensure the model-viewer element is a block element */
+    display: block;
+}
+
+.products-section-title {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Optional: Style for the AR button if it's visible */
+.manus3dviewer_model button[slot="ar-button"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.manus3dviewer_model button[slot="ar-button"]:hover {
+    background-color: #0056b3;
+}
